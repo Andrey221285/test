@@ -11,7 +11,7 @@ import org.json.*;
 public class Test {
     public static void main(String[] args) {
 
-        String nameGroup = "javarush";
+        String nameGroup = "uniton";
         String cityName = "Новосибирск";
         Test test = new Test();
 
@@ -59,6 +59,7 @@ public class Test {
                         list.add(new User(id, last_name, first_name, city, nameGroup));
                     }
                 } catch (JSONException e) {
+                    e.printStackTrace();
                 }
             }
         }
